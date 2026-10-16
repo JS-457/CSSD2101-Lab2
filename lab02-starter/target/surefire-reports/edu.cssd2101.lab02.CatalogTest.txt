@@ -1,0 +1,25 @@
+-------------------------------------------------------------------------------
+Test set: edu.cssd2101.lab02.CatalogTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 2, Skipped: 0, Time elapsed: 0.023 s <<< FAILURE! -- in edu.cssd2101.lab02.CatalogTest
+edu.cssd2101.lab02.CatalogTest.creatorMatchingDoesNotDependOnDefaultLocale -- Time elapsed: 0.006 s <<< ERROR!
+java.lang.UnsupportedOperationException: T3 is an exercise
+	at edu.cssd2101.lab02.MaterialCatalog.byCreators(MaterialCatalog.java:97)
+	at edu.cssd2101.lab02.CatalogTest.creatorMatchingDoesNotDependOnDefaultLocale(CatalogTest.java:88)
+
+edu.cssd2101.lab02.CatalogTest.invalidQueriesAndThrowingCallbacksLeaveStateUnchanged -- Time elapsed: 0.006 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.NullPointerException> but was: <java.lang.UnsupportedOperationException>
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3234)
+	at edu.cssd2101.lab02.CatalogTest.invalidQueriesAndThrowingCallbacksLeaveStateUnchanged(CatalogTest.java:63)
+Caused by: java.lang.UnsupportedOperationException: T3 is an exercise
+	at edu.cssd2101.lab02.MaterialCatalog.byCreators(MaterialCatalog.java:97)
+	at edu.cssd2101.lab02.CatalogTest.lambda$invalidQueriesAndThrowingCallbacksLeaveStateUnchanged$5(CatalogTest.java:63)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:54)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	... 2 more
+
+edu.cssd2101.lab02.CatalogTest.queriesUseExplicitCalendarIntervalsAndOrSemantics -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: T3 is an exercise
+	at edu.cssd2101.lab02.MaterialCatalog.recent(MaterialCatalog.java:84)
+	at edu.cssd2101.lab02.CatalogTest.queriesUseExplicitCalendarIntervalsAndOrSemantics(CatalogTest.java:42)
+

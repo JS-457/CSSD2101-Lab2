@@ -1,0 +1,33 @@
+-------------------------------------------------------------------------------
+Test set: edu.cssd2101.lab02.ShippingCheckoutTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 2, Skipped: 0, Time elapsed: 0.025 s <<< FAILURE! -- in edu.cssd2101.lab02.ShippingCheckoutTest
+edu.cssd2101.lab02.ShippingCheckoutTest.visitorUsesEveryConcreteOverloadAndHasNoAccumulatingState -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: T4 is an exercise
+	at edu.cssd2101.lab02.ShippingVisitor.visit(ShippingVisitor.java:19)
+	at edu.cssd2101.lab02.ShippingVisitor.visit(ShippingVisitor.java:11)
+	at edu.cssd2101.lab02.PrintedBook.accept(PrintedBook.java:46)
+	at edu.cssd2101.lab02.ShippingCheckoutTest.visitorUsesEveryConcreteOverloadAndHasNoAccumulatingState(ShippingCheckoutTest.java:19)
+
+edu.cssd2101.lab02.ShippingCheckoutTest.overflowAndInvalidPoliciesAreExplicitAndPreserveState -- Time elapsed: 0.002 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.ArithmeticException> but was: <java.lang.UnsupportedOperationException>
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3234)
+	at edu.cssd2101.lab02.ShippingCheckoutTest.overflowAndInvalidPoliciesAreExplicitAndPreserveState(ShippingCheckoutTest.java:52)
+Caused by: java.lang.UnsupportedOperationException: T4 is an exercise
+	at edu.cssd2101.lab02.ShippingVisitor.visit(ShippingVisitor.java:19)
+	at edu.cssd2101.lab02.ShippingVisitor.visit(ShippingVisitor.java:11)
+	at edu.cssd2101.lab02.PrintedBook.accept(PrintedBook.java:46)
+	at edu.cssd2101.lab02.Checkout.totalCents(Checkout.java:38)
+	at edu.cssd2101.lab02.ShippingCheckoutTest.lambda$overflowAndInvalidPoliciesAreExplicitAndPreserveState$0(ShippingCheckoutTest.java:52)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:54)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	... 2 more
+
+edu.cssd2101.lab02.ShippingCheckoutTest.checkoutSumsRoundedLineItemsAndShippingWithoutMutatingCatalog -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: T4 is an exercise
+	at edu.cssd2101.lab02.ShippingVisitor.visit(ShippingVisitor.java:19)
+	at edu.cssd2101.lab02.ShippingVisitor.visit(ShippingVisitor.java:11)
+	at edu.cssd2101.lab02.PrintedBook.accept(PrintedBook.java:46)
+	at edu.cssd2101.lab02.Checkout.totalCents(Checkout.java:38)
+	at edu.cssd2101.lab02.ShippingCheckoutTest.checkoutSumsRoundedLineItemsAndShippingWithoutMutatingCatalog(ShippingCheckoutTest.java:38)
+
