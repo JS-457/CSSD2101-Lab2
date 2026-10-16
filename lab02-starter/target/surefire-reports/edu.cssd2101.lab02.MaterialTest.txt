@@ -1,0 +1,45 @@
+-------------------------------------------------------------------------------
+Test set: edu.cssd2101.lab02.MaterialTest
+-------------------------------------------------------------------------------
+Tests run: 14, Failures: 0, Errors: 8, Skipped: 0, Time elapsed: 0.102 s <<< FAILURE! -- in edu.cssd2101.lab02.MaterialTest
+edu.cssd2101.lab02.MaterialTest.readingTimeUsesCeilingWithoutOverflow(int)[1] -- Time elapsed: 0.010 s <<< ERROR!
+java.lang.UnsupportedOperationException: T2 is an exercise
+	at edu.cssd2101.lab02.EBook.readingTimeMinutes(EBook.java:78)
+	at edu.cssd2101.lab02.MaterialTest.readingTimeUsesCeilingWithoutOverflow(MaterialTest.java:91)
+
+edu.cssd2101.lab02.MaterialTest.readingTimeUsesCeilingWithoutOverflow(int)[2] -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: T2 is an exercise
+	at edu.cssd2101.lab02.EBook.readingTimeMinutes(EBook.java:78)
+	at edu.cssd2101.lab02.MaterialTest.readingTimeUsesCeilingWithoutOverflow(MaterialTest.java:91)
+
+edu.cssd2101.lab02.MaterialTest.readingTimeUsesCeilingWithoutOverflow(int)[3] -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: T2 is an exercise
+	at edu.cssd2101.lab02.EBook.readingTimeMinutes(EBook.java:78)
+	at edu.cssd2101.lab02.MaterialTest.readingTimeUsesCeilingWithoutOverflow(MaterialTest.java:91)
+
+edu.cssd2101.lab02.MaterialTest.readingTimeUsesCeilingWithoutOverflow(int)[4] -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: T2 is an exercise
+	at edu.cssd2101.lab02.EBook.readingTimeMinutes(EBook.java:78)
+	at edu.cssd2101.lab02.MaterialTest.readingTimeUsesCeilingWithoutOverflow(MaterialTest.java:91)
+
+edu.cssd2101.lab02.MaterialTest.readingTimeUsesCeilingWithoutOverflow(int)[5] -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: T2 is an exercise
+	at edu.cssd2101.lab02.EBook.readingTimeMinutes(EBook.java:78)
+	at edu.cssd2101.lab02.MaterialTest.readingTimeUsesCeilingWithoutOverflow(MaterialTest.java:91)
+
+edu.cssd2101.lab02.MaterialTest.readingTimeUsesCeilingWithoutOverflow(int)[6] -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: T2 is an exercise
+	at edu.cssd2101.lab02.EBook.readingTimeMinutes(EBook.java:78)
+	at edu.cssd2101.lab02.MaterialTest.readingTimeUsesCeilingWithoutOverflow(MaterialTest.java:91)
+
+edu.cssd2101.lab02.MaterialTest.templateCombinesStrategiesAndRoundsOnceHalfEven -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: T2 is an exercise
+	at edu.cssd2101.lab02.EBook.intrinsicBasisPoints(EBook.java:96)
+	at edu.cssd2101.lab02.Material.priceCents(Material.java:76)
+	at edu.cssd2101.lab02.MaterialTest.templateCombinesStrategiesAndRoundsOnceHalfEven(MaterialTest.java:58)
+
+edu.cssd2101.lab02.MaterialTest.typedFactoriesBuilderDefaultsAndReuseAreSafe -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: T5 is an exercise
+	at edu.cssd2101.lab02.EBookBuilder.build(EBookBuilder.java:61)
+	at edu.cssd2101.lab02.MaterialTest.typedFactoriesBuilderDefaultsAndReuseAreSafe(MaterialTest.java:151)
+
