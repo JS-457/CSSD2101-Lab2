@@ -58,6 +58,6 @@ public final class EBookBuilder {
      */
     public EBook build() {
         // TODO T5: implement the documented extension contract.
-        throw new UnsupportedOperationException("T5 is an exercise");
+        return new EBook(data, format, bytes, words, drm);
     }
 }
