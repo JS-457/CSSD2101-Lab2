@@ -57,7 +57,6 @@ public final class EBookBuilder {
      * @return validated e-book
      */
     public EBook build() {
-        // TODO T5: implement the documented extension contract.
         return new EBook(data, format, bytes, words, drm);
     }
 }

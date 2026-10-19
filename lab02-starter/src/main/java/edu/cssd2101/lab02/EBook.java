@@ -74,8 +74,7 @@ public final class EBook extends Material implements Media {
      * @return nonnegative minutes, safely calculated for every int word count
      */
     public int readingTimeMinutes() {
-        // TODO T2: implement the documented extension contract.
-        throw new UnsupportedOperationException("T2 is an exercise");
+        return Math.ceilDiv(wordCount(), 250);
     }
 
     /** {@inheritDoc} */
@@ -92,8 +91,7 @@ public final class EBook extends Material implements Media {
 
     @Override
     protected int intrinsicBasisPoints(int asOfYear) {
-        // TODO T2: implement the documented extension contract.
-        throw new UnsupportedOperationException("T2 is an exercise");
+        return !drmEnabled() ? 1500 : 0;
     }
 
     /** {@inheritDoc} */
