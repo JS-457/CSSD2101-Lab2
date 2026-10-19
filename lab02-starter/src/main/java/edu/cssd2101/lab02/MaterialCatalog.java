@@ -80,8 +80,12 @@ public interface MaterialCatalog {
      * @throws IllegalArgumentException if the context or count is invalid
      */
     default List<Material> recent(int asOfYear, int years) {
-        // TODO T3: implement the documented extension contract.
-        throw new UnsupportedOperationException("T3 is an exercise");
+        if (asOfYear > 9999 || asOfYear < 1450 || years > 9999 || years < 1){
+            throw new IllegalArgumentException("Years out of range");
+        }
+        int first = asOfYear - years + 1;
+        return select(m -> m.data().year() >= first && m.data().year() <= asOfYear);
+
     }
 
     /**
@@ -93,7 +97,10 @@ public interface MaterialCatalog {
      * @throws IllegalArgumentException if any name is blank
      */
     default List<Material> byCreators(String... creators) {
-        // TODO T3: implement the documented extension contract.
-        throw new UnsupportedOperationException("T3 is an exercise");
+        java.util.Objects.requireNonNull(creators);
+        var names = new java.util.HashSet<String>(); // Creates a new empty set
+        for (String name : creators) // adding the creator names to a new list, before returning to the user.
+            names.add(CatalogData.text(name).toLowerCase(java.util.Locale.ROOT));
+        return select(m -> names.contains(m.data().creator().toLowerCase(java.util.Locale.ROOT)));
     }
 }
