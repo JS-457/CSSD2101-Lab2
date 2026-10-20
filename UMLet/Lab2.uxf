@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>792</x>
+      <y>513</y>
+      <w>189</w>
+      <h>198</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;abstract&gt;&gt; &lt;&lt;sealed&gt;&gt;
+Material
+--
+#Material()
+--
+-data: CatalogData
+--
+#intrinsicBasisPoints()
++data()
++equals() {final}
++hashCode()
++description() {final}
++toString()
++priceCents()
++accept() {final}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1233</x>
+      <y>927</y>
+      <w>189</w>
+      <h>243</h>
+    </coordinates>
+    <panel_attributes>EBook
+--
++EBook()
+--
+-format: EBookFormat
+-drmEnabled: boolean
+-wordCount: int
+-fileBytes: long
+--
+#intrinsicBasisPoints()
++wordCount()
++format()
++fileBytes()
++drmEnabled()
++durationMinutes()
++description()
++accept()
++readingTimeMinutes()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>675</x>
+      <y>927</y>
+      <w>189</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>Magazine
+--
++Magazine()
+--
+-issueNumber: int
+--
+#intrinsicBasisPoints()
++accept()
++issueNumber()
++description()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1521</x>
+      <y>927</y>
+      <w>189</w>
+      <h>198</h>
+    </coordinates>
+    <panel_attributes>VideoMaterial
+--
++VideoMaterial()
+--
+-durationMinutes: int
+-delivery: Delivery
+-cast: List&lt;String&gt;
+--
+#intrinsicBasisPoints()
++durationMinutes()
++description()
++format()
++cast()
++accept()
++delivery()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>396</x>
+      <y>927</y>
+      <w>189</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>PrintedBook
+--
++PrintedBook()
+--
+-grams: int
+--
++accept()
+#intrinsicBasisPoints()
++weightGrams()
++description()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1260</x>
+      <y>603</y>
+      <w>189</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+Media
+--
++durationMinutes()
++format()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1341</x>
+      <y>666</y>
+      <w>252</w>
+      <h>279</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;140.0;260.0;140.0;260.0;290.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>477</x>
+      <y>693</y>
+      <w>405</w>
+      <h>252</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>430.0;10.0;430.0;130.0;10.0;130.0;10.0;260.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>855</x>
+      <y>693</y>
+      <w>486</w>
+      <h>252</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0;520.0;130.0;520.0;260.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>765</x>
+      <y>693</y>
+      <w>117</w>
+      <h>252</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>110.0;10.0;110.0;130.0;10.0;130.0;10.0;260.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>855</x>
+      <y>693</y>
+      <w>783</w>
+      <h>252</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0;850.0;130.0;850.0;260.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>855</x>
+      <y>693</y>
+      <w>216</w>
+      <h>252</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0;220.0;130.0;220.0;260.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>954</x>
+      <y>927</y>
+      <w>189</w>
+      <h>198</h>
+    </coordinates>
+    <panel_attributes>AudioBook
+--
++AudioBook()
+--
+-durationMinutes: int
+-delivery: Delivery
+-abridged: boolean
+--
+#intrinsicBasisPoints()
++abridged()
++accept()
++description()
++format()
++delivery()
++durationMinutes()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1278</x>
+      <y>666</y>
+      <w>90</w>
+      <h>279</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>80.0;10.0;80.0;140.0;10.0;140.0;10.0;290.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1080</x>
+      <y>666</y>
+      <w>288</w>
+      <h>279</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>300.0;10.0;300.0;140.0;10.0;140.0;10.0;290.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>360</x>
+      <y>153</y>
+      <w>342</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>Checkout
+{final}
+--
++Checkout(DiscountStrategy, MaterialVisitor&lt;Long)
+--
+-discount: DiscountStrategy {final}
+-shipping: MaterialVisitor&lt;Long&gt; {final}
+--
++totalCents(catalog: MaterialCatalog, asOfYear: int): long</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1080</x>
+      <y>387</y>
+      <w>189</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+MaterialVisitor&lt;R&gt;
+--
++visit(material: VideoMaterial)
++visit(material: PrintedBook)
++visit(material: EBook)
++visit(material: AudioBook)
++visit(material: Magazine)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>693</x>
+      <y>216</y>
+      <w>405</w>
+      <h>243</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>430.0;250.0;230.0;250.0;230.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1080</x>
+      <y>234</y>
+      <w>243</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+DiscountStrategy
+--
++extraBasisPoints(material: Material)
++none(): Material
++fixed(basisPoints: int): DiscountStrategy</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>693</x>
+      <y>216</y>
+      <w>405</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>430.0;100.0;230.0;100.0;230.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1080</x>
+      <y>36</y>
+      <w>189</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+MaterialCatalog
+--
++sorted(): List&lt;Material&gt;
++find(): Optional&lt;Material&gt;
++select(): List&lt;Material&gt;
++add(): boolean
++recent(): List&lt;Material&gt;
++byCreators(): List&lt;Material&gt;
++remove(): Optional&lt;Material&gt;
++all(): List&lt;Material&gt;
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>693</x>
+      <y>117</y>
+      <w>405</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>430.0;10.0;230.0;10.0;230.0;120.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>414</x>
+      <y>522</y>
+      <w>216</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>ShippingVisitor
+--
++ShippingVisitor()
+--
++visit(material: PrintedBook): Long
++visit(material: Magazine): Long
++visit(material: AudioBook): Long
++visit(material: VideoMaterial): Long
++visit(material: EBook): Long</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>468</x>
+      <y>279</y>
+      <w>234</w>
+      <h>171</h>
+    </coordinates>
+    <panel_attributes>InMemoryCatalog
+--
+-entries: Map&lt;String, Material&gt;
+--
++InMemoryCatalog()
++add(material: Material): boolean
++find(id: String): Optional&lt;Material&gt;
++remove(id: String): Optional&lt;Material&gt;
++all(): List&lt;Material&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>693</x>
+      <y>414</y>
+      <w>405</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>430.0;70.0;140.0;70.0;140.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>621</x>
+      <y>468</y>
+      <w>477</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>510.0;10.0;90.0;10.0;90.0;140.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>450</x>
+      <y>639</y>
+      <w>324</w>
+      <h>306</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;170.0;340.0;170.0;340.0;320.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>450</x>
+      <y>639</y>
+      <w>72</w>
+      <h>306</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;170.0;60.0;170.0;60.0;320.0</additional_attributes>
+  </element>
+</diagram>
