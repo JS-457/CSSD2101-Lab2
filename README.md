@@ -1,5 +1,16 @@
 # CSSD2101-Lab2
+
 Lab 2 Assignement related to polymorphism, abstraction, and interface.
+
+## Design
+
+![Diagram](./UMLet/Lab2.jpg)
+
+I made a UML diagram which goes over the 5 inheritances of Material and the 3 implementations of Media, along with the policies relating to CheckOut.
+
+Final equality prevents asymmetric subtype behavior because the final keyword for the equals and hashCode methods mean they cannot be overridden, and therefore any subclass which uses the methods cannot override its conditions (finding equality through hash codes), thus maintaining the equality.
+
+Likewise, the reason an Ebook does not need a weightGrams field is because an EBook is digital, and does not need weightGrams. Each of the sub-classes has their own distinct attributes which works for their specific goals, which is the purpose of abstraction.
 
 ## Testing
 
