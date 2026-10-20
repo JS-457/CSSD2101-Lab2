@@ -19,7 +19,6 @@ We used JUnit 5 and Maven for testing the bookstore application.
 Tests included pricing, shipping, generation of e-books, catalogue methods, and tests for bad inputs. We did boundary case testing to ensure correct calculations.
 
 **Test results:**
-
 - Tests: 38
 - Failed: 0
 - Errors: 0
