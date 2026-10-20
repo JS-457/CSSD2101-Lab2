@@ -1,6 +1,5 @@
 # CSSD2101-Lab2
-Lab 2 group. README.md pending.
-
+Lab 2 Assignement related to polymorphism, abstraction, and interface.
 
 ## Testing
 
